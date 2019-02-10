@@ -25,3 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', rincon.views.index, name='index'),
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

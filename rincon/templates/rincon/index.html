@@ -1,6 +1,13 @@
+{% load static %}
 <html>
-<head><title>Home Page</title></head>
+<head>
+  <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+
+</head>
 <body>
-Welcome to el Ricon del Sabor!
+
+<h1> Welcome to el Ricon del Sabor! </h1>
+{% static 'images/logo.jpg' %} 
 </body>
 </html>
