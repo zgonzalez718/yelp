@@ -20,10 +20,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rincon.views import index
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', rincon.views.index, name='index'),
+    path('menu', rincon.views.menu, name='menu'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
