@@ -1,8 +1,15 @@
 body {
-  background-color: seagreen;
+  background-color: red;
   font-family: "Lato", sans-serif;
 }
 
+h2{
+  color: rebeccapurple;
+}
+
+#logo{
+  margin-left: 500px;
+}
 
 .sidenav {
   height: 100%;
@@ -11,7 +18,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #4F4234;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -20,12 +27,12 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #CEC9AB;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #7A7265;
 }
 
 .main {
