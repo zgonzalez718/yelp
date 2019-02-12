@@ -1,14 +1,6 @@
 body {
-  background-color: red;
+  background-color: #4B723D ;
   font-family: "Lato", sans-serif;
-}
-
-h2{
-  color: rebeccapurple;
-}
-
-#logo{
-  margin-left: 500px;
 }
 
 .sidenav {
@@ -39,6 +31,10 @@ h2{
   margin-left: 160px;
   font-size: 28px;
   padding: 0px 10px;
+}
+
+.mySlides {
+  display: none;
 }
 
 @media screen and (max-height: 450px) {
