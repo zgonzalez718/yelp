@@ -3,6 +3,9 @@ body {
   font-family: 'Work Sans', sans-serif;;
 }
 
+p{
+  background-color: white;
+}
 h1{
   margin: 10px 160px;
 }
@@ -43,6 +46,38 @@ h1{
 #map{
   margin: 200px;
 }
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  margin-left: 1px;
+  width: 35%;
+}
+
+.right {
+  width: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  width: 10px;
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 400px;
+  margin-left: 205px;
+  background-color: #CEC9AB;
+  padding: 2px 16px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
