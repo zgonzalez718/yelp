@@ -3,11 +3,13 @@ body {
   font-family: 'Work Sans', sans-serif;;
 }
 
-p{
+#descriptionBox{
   background-color: white;
 }
-h1{
-  margin: 10px 160px;
+
+h1, h2{
+  margin: 10px 200px;
+  display: block;
 }
 .sidenav {
   height: 100%;
@@ -44,7 +46,7 @@ h1{
 }
 
 #map{
-  margin: 200px;
+  margin: 10px 200px;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -78,6 +80,9 @@ h1{
   padding: 2px 16px;
 }
 
+#hrs{
+  margin-left: 200px;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

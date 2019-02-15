@@ -16,55 +16,28 @@
   </div>
 
 <h1>MENU</h1>
-<div class="row">
-  <div class="column left">
-    <div class="card">
-      
-        <div class="container">
-          <h4><b>ITEM</b></h4>
-          <p>DESCRIPTION</p>
-        </div>
-    </div>
-  </div>
-
-  <div class="column right">
-    <div class="card">
-
-        <div class="container">
-          <h4><b>ITEM</b></h4>
-          <p>DESCRIPTION</p>
-        </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column left">
-      <div class="card">
-
-          <div class="container">
-            <h4><b>ITEM</b></h4>
-            <p>DESCRIPTION</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="column right">
-      <div class="card">
-
-          <div class="container">
-            <h4><b>ITEM</b></h4>
-            <p>DESCRIPTION</p>
-          </div>
-      </div>
-    </div>
-
+<br>
+<br>
 
 
 
 {% for food in foods.all %}
+<div class="row">
+  <div class="column left">
+    <div class="card">
 
-<h1> {{ food.image.url }} <h1>
-<h1> {{ food.description }} </h1>
+        <div class="container">
+          <img src="{{food.image.url}}" height="100" width="150">
+          <h4><b>{{ food.food_item }}</b></h4>
+          <p>{{ food.description }}</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- <div class="column right">
+    <div class="card">
+  </div>
+</div> -->
 
 {% endfor %}
 

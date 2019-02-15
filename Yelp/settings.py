@@ -131,5 +131,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static_files"),
 
 ]
-FOOD_URL = '/food/'
+
+FOOD_URL = 'http://127.0.0.1:8000/food/'
 FOOD_ROOT = BASE_DIR

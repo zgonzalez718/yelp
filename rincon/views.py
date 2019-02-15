@@ -7,8 +7,8 @@ def index(request):
     return render(request, 'rincon/index.html')
 
 def menu(request):
-    food = Food.objects
-    return render(request, 'rincon/menu.html',{'foods':food})
+    foods = Food.objects
+    return render(request, 'rincon/menu.html',{'foods':foods})
 
 def location(request):
     return render(request, 'rincon/location.html')
