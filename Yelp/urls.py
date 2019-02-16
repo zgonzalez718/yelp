@@ -31,3 +31,4 @@ urlpatterns = [
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.FOOD_URL, document_root=settings.FOOD_ROOT)
+urlpatterns += static(settings.MEAT_URL, document_root=settings.MEAT_ROOT)

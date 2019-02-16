@@ -4,6 +4,7 @@
 <head>
   <title>Page Title</title>
       <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 </head>
 <body>
 
@@ -21,18 +22,18 @@
 
 
 
-{% for food in foods.all %}
+{% for meat in meats.all %}
 <div class="row">
   <div class="column left">
     <div class="card">
-
         <div class="container">
-          <img src="food/{{food.image.url}}" height="100" width="150">
-          <h4><b>{{ food.food_item }}</b></h4>
-          <p>{{ food.description }}</p>
+          <img src="food/{{meat.image.url}}" height="100" width="150">
+          <h4><b>{{ meat.food_item }}</b></h4>
+          <p>{{ meat.description }}</p>
         </div>
     </div>
   </div>
+</div>
 
   <!-- <div class="column right">
     <div class="card">
