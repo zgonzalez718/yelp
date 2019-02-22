@@ -1,6 +1,6 @@
 body {
   background-color: #4B723D ;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;;
 }
 
 #descriptionBox{
@@ -52,17 +52,10 @@ h1, h2{
 /* Create two unequal columns that floats next to each other */
 .column {
   float: left;
+  display: inline-block;
+  width: 45%;
   padding: 10px;
   height: auto; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  margin-left: 1px;
-  width: 35%;
-}
-
-.right {
-  width: 35%;
 }
 
 /* Clear floats after the columns */
@@ -72,12 +65,18 @@ h1, h2{
   display: table;
   clear: both;
 }
+.row{
+  display: inline-block;
+  width: 45%;
+}
+
 
 .container {
-  width: 400px;
+  width: 350px;
+  height:300px;
   margin-left: 205px;
   background-color: #CEC9AB;
-  padding: 2px 16px;
+  padding: 16px 16px;
 }
 
 #hrs{
@@ -86,4 +85,105 @@ h1, h2{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* social media bar */
+.icon-bar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+/* cart buttons*/
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
 }

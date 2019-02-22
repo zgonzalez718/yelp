@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from .models import Food
-from .models import Meat
+from .models import Food, Meat
 # Create your views here.
 
 def index(request):
@@ -9,7 +8,11 @@ def index(request):
 def menu(request):
     foods = Food.objects
     meats = Meat.objects
-    return render(request, 'rincon/menu.html',{'foods':foods},{'meats':meats})
+    return render(request, 'rincon/menu.html',{
+    'foods':foods,
+    'meats':meats
+
+    })
 
 def location(request):
     return render(request, 'rincon/location.html')

@@ -5,6 +5,8 @@
   <title>Page Title</title>
       <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="store.js" async></script>
 </head>
 <body>
 
@@ -16,6 +18,14 @@
     <a href="about">ABOUT US</a>
   </div>
 
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="google"><i class="fa fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
 <h1>MENU</h1>
 <br>
 <br>
@@ -24,21 +34,19 @@
 
 {% for meat in meats.all %}
 <div class="row">
-  <div class="column left">
+  <div class="column">
     <div class="card">
         <div class="container">
           <img src="food/{{meat.image.url}}" height="100" width="150">
           <h4><b>{{ meat.food_item }}</b></h4>
+          <p>{{ meat.price}}</p>
           <p>{{ meat.description }}</p>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
         </div>
     </div>
   </div>
 </div>
 
-  <!-- <div class="column right">
-    <div class="card">
-  </div>
-</div> -->
 
 {% endfor %}
 
